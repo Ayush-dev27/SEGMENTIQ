@@ -133,8 +133,13 @@ def calculate_rfm(
     return rfm
 
 
+# Aliases for flexible downstream calling
+calculate_rfm_metrics = calculate_rfm
+
+
 __all__ = [
     "calculate_rfm",
+    "calculate_rfm_metrics",
     "determine_reference_date",
     "validate_rfm_input",
     "REQUIRED_COLUMNS",

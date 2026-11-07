@@ -165,8 +165,13 @@ def score_rfm(df: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
+# Aliases for flexible downstream calling
+assign_rfm_scores = score_rfm
+
+
 __all__ = [
     "score_rfm",
+    "assign_rfm_scores",
     "compute_quantile_score",
     "validate_scoring_input",
     "REQUIRED_COLUMNS",
